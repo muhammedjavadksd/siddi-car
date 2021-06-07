@@ -39,62 +39,46 @@
     </nav>
 
 
+
     <div class="demo" style="height: 50px;">
         <!--This div for manage height-->
     </div>
-
-    <section>
-        <div class="container">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                 Category
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Comedy/Skit Videos</a></li>
-                    <li><a class="dropdown-item" href="#">Vlogs</a></li>
-                    <li><a class="dropdown-item" href="#">Entertainment</a></li>
-                    <li><a class="dropdown-item" href="#">Song's</a></li>
-                    <li><a class="dropdown-item" href="#">Short Film</a></li>
-                    <li><a class="dropdown-item" href="#">Education</a></li>
-                    <li><a class="dropdown-item" href="#">Trending</a></li>
-
-                </ul>
-            </div><br>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="box_ytb">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GsNtV0ee278" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="box_ytb">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/W9pHmDsZEhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="box_ytb">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LpS7hBp992U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="box_ytb">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/l33kTpzKAlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
+    <div class="container">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Name of brand</label>
+                <input type="text" class="form-control" id="inputEmail4">
             </div>
-        </div>
-    </section>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Place</label>
+                <input type="text" class="form-control" id="inputPassword4">
+            </div>
 
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">About </label>
+                <input type="text" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Phone number</label>
+                <input type="number" class="form-control" id="inputPassword4">
+            </div>
 
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Category</label>
+                <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+
+    </div>
     <style>
         body {
-            background-color: #eeeeee
-        }
-        
-        .box_ytb {
-            height: 175px;
-            background-color: red;
-            margin-bottom: 30px;
+            background-color: #fefef6
         }
     </style>
     <script>
@@ -123,7 +107,6 @@
             cancelBtn.classList.add("show");
         }
     </script>
-
 
 
     <!-- Optional JavaScript; choose one of the two! -->
